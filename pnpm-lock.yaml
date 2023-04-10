@@ -1,5 +1,8 @@
 lockfileVersion: '6.0'
 
+overrides:
+  svelte-eslint-parser: sveltejs/svelte-eslint-parser#fix-this
+
 devDependencies:
   '@sveltejs/vite-plugin-svelte':
     specifier: ^2.0.3
@@ -488,7 +491,7 @@ packages:
       postcss-load-config: 3.1.4(postcss@8.4.21)
       postcss-safe-parser: 6.0.0(postcss@8.4.21)
       svelte: 3.58.0
-      svelte-eslint-parser: 0.26.0(svelte@3.58.0)
+      svelte-eslint-parser: github.com/sveltejs/svelte-eslint-parser/b80353a1323abe35d3529ba2976b46ccec04417e(svelte@3.58.0)
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1018,21 +1021,6 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /svelte-eslint-parser@0.26.0(svelte@3.58.0):
-    resolution: {integrity: sha512-R7FtiB4ZzXXQDy7ZnE90voYvsfeD2if/My7+Mq/p8MHW/VUtCaY2EbNyKEG+PAH4cygkvUnNbmkVqB+PSjZlsA==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      svelte: ^3.37.0
-    peerDependenciesMeta:
-      svelte:
-        optional: true
-    dependencies:
-      eslint-scope: 7.1.1
-      eslint-visitor-keys: 3.4.0
-      espree: 9.5.1
-      svelte: 3.58.0
-    dev: true
-
   /svelte-hmr@0.15.1(svelte@3.58.0):
     resolution: {integrity: sha512-BiKB4RZ8YSwRKCNVdNxK/GfY+r4Kjgp9jCLEy0DuqAKfmQtpL38cQK3afdpjw4sqSs4PLi3jIPJIFp259NkZtA==}
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
@@ -1138,4 +1126,22 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  github.com/sveltejs/svelte-eslint-parser/b80353a1323abe35d3529ba2976b46ccec04417e(svelte@3.58.0):
+    resolution: {tarball: https://codeload.github.com/sveltejs/svelte-eslint-parser/tar.gz/b80353a1323abe35d3529ba2976b46ccec04417e}
+    id: github.com/sveltejs/svelte-eslint-parser/b80353a1323abe35d3529ba2976b46ccec04417e
+    name: svelte-eslint-parser
+    version: 0.26.0
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      svelte: ^3.37.0
+    peerDependenciesMeta:
+      svelte:
+        optional: true
+    dependencies:
+      eslint-scope: 7.1.1
+      eslint-visitor-keys: 3.4.0
+      espree: 9.5.1
+      svelte: 3.58.0
     dev: true
